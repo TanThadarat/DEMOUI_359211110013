@@ -6,12 +6,14 @@ import java.sql.SQLException;
 
 public class dbConnection {
 
-    private static final String SQCONN = "jdbc:sqlite:chool.sglite";
+    private static final String SQCONN = "jdbc:sqlite:\\school.sglite";
+
 public static Connection getConnection() throws SQLException {
     try {
-        Class.forName("org.salite.JDBC");
+        Class.forName("org.sqlite.JDBC");
         return DriverManager.getConnection(SQCONN);
     } catch (ClassNotFoundException ex) {
+        ex.printStackTrace();
 
     }
     return null;
