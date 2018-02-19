@@ -38,7 +38,7 @@
             <Image url="@../image/icons8_Lock_100px.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="297.0" layoutY="165.0" onAction="#Login" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #75a478;" text="Login" />
+      <JFXButton fx:id="btnLogin" layoutX="297.0" layoutY="165.0" onAction="#Login" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #75a478;" text="Login" />
       <Label layoutX="258.0" layoutY="369.0" text="DB Status:" />
       <Label fx:id="dbStatus" layoutX="316.0" layoutY="369.0" prefHeight="17.0" prefWidth="168.0" />
       <JFXPasswordField fx:id="password" layoutX="314.0" layoutY="104.0" promptText="Password" />
